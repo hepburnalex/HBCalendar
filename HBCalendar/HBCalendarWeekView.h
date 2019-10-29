@@ -10,6 +10,7 @@
 
 @interface HBCalendarWeekView : UIView
 
+@property(nonatomic,strong) UIFont *weekFont;
 @property(nonatomic,strong) UIView *weekBackView;
 @property(nonatomic,strong) NSArray *weekTitles;
 

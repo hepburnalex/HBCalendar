@@ -38,8 +38,9 @@
         }
     }
     CGFloat width = self.width /weekTitles.count;
+    UIFont *font = self.weekFont?self.weekFont:UISystemFont(14);
     for (int i = 0; i< weekTitles.count; i++) {
-        UILabel *weekLabel = [UILabel CreateLabel:weekTitles[i] font:UICustomFont(14) color:[UIColor blackColor]];
+        UILabel *weekLabel = [UILabel CreateLabel:weekTitles[i] font:font color:[UIColor blackColor]];
         weekLabel.textAlignment = NSTextAlignmentCenter;
         weekLabel.frame = CGRectMake(i * width, 0, width, self.height);
         [self addSubview:weekLabel];

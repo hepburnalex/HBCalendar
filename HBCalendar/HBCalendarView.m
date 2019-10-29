@@ -298,11 +298,6 @@
 
 #pragma mark - Property
 
-- (void)setWeekTitles:(NSArray *)weekTitles {
-    _weekTitles = weekTitles;
-    _calendarWeekView.weekTitles = _weekTitles;
-}
-
 /*
  * 是否禁止手势滚动
  */

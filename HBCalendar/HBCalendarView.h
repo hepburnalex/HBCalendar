@@ -16,8 +16,6 @@
 @property(nonatomic,strong) HBCalendarHearder *calendarHeader;
 //星期头部
 @property(nonatomic,strong) HBCalendarWeekView *calendarWeekView;
-//星期标题
-@property(nonatomic,strong) NSArray *weekTitles;
 //
 @property(nonatomic,strong) NSArray<NSNumber *> *dayPoints;
 
