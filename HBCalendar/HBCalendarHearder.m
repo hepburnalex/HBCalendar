@@ -14,9 +14,14 @@
 @end
 @implementation HBCalendarHearder
 
+- (void)setTitleFont:(UIFont *)titleFont {
+    _titleFont = titleFont;
+    self.dateLabel.font = titleFont;
+}
+
 - (UILabel *)dateLabel {
     if (!_dateLabel) {
-        _dateLabel = [UILabel CreateLabel:@"" font:UICustomFont(19) color:kTextColor];
+        _dateLabel = [UILabel CreateLabel:@"" font:UISystemFont(19) color:kTextColor];
         _dateLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         _dateLabel.textAlignment = NSTextAlignmentCenter;
     }
