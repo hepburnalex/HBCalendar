@@ -27,7 +27,7 @@
 - (UIView *)pointView {
     if (!_pointView) {
         _pointView = [[UIView alloc] init];
-        _pointView.backgroundColor = kOrangeColor;
+        _pointView.backgroundColor = UICOLORHEX(@"F2BE6A");
         _pointView.cornerRadius = 2;
         _pointView.shouldRasterize = YES;
         _pointView.hidden = YES;

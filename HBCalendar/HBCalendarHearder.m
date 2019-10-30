@@ -21,7 +21,7 @@
 
 - (UILabel *)dateLabel {
     if (!_dateLabel) {
-        _dateLabel = [UILabel CreateLabel:@"" font:UISystemFont(19) color:kTextColor];
+        _dateLabel = [UILabel CreateLabel:@"" font:UISystemFont(19) color:[UIColor colorWithRed:0.14 green:0.09 blue:0.08 alpha:1.0]];
         _dateLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         _dateLabel.textAlignment = NSTextAlignmentCenter;
     }

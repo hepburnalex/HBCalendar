@@ -42,7 +42,7 @@
 }
 
 - (void)setup {
-    self.pointColor = kLightOrangeColor;
+    self.pointColor = UICOLORHEX(@"F2BE6A");
     self.selectPointColor = [UIColor whiteColor];
     self.todayPointColor = [UIColor whiteColor];
     self.currentMonthTitleColor = UICOLORHEX(@"0x333333");
